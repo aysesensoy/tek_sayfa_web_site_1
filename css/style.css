@@ -1,0 +1,388 @@
+* {
+box-sizing: border-box;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+} 
+html,body{
+margin-top:0;
+font-family: "Lucida Sans", sans-serif;
+}
+
+.logo{
+    margin-left:20px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+
+.menu li {
+    min-width:100%;
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: gray;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.header{
+    min-height: 100px;
+    background: url('../img/banner.png');
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
+.navMenu li{
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding:20px 0 10px 0;
+    position: relative;
+}
+.navMenu a{
+    text-decoration: none;
+    color:gray;
+}
+.navMenu > li{
+    width: calc(100%/9);
+}
+.navMenu,.navMenu li ul{
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    clear:both;
+    padding:0;
+    height: 100%;
+}
+.navMenu li ul li{
+   width: 50%;
+   z-index: 3;
+}
+
+[class*="border"] {
+    border-top:5px solid;
+}
+.nopadding{
+    padding:0!important;
+}
+.borderPink{
+    border-color:#ff6699;
+}
+.borderYellow{
+    border-color:#f7c44e;
+}
+.borderGreen{
+    border-color:#99cc66;
+}
+
+.borderOrrange{
+    border-color:#ffcc99;
+}
+.borderBlue{
+    border-color:#33cccc;
+}
+.borderMagenta{
+    border-color:#cc66cc;
+}
+.borderGray{
+    border-color:#d2d2d2;
+}
+.borderDarkBlue{
+    border-color:#336699;
+}
+.borderRed{
+    border-color:#cc3333;
+}
+.borderSkyblue{
+    border-color:#66ccff;
+}
+.borderBrown{
+    border-color:#cc6666;
+}
+.bRight::after{
+    content:" ";
+    width: 2px;
+    height: 100%;
+    background: 
+    linear-gradient(
+      to top, 
+      rgba(0, 0, 0, 0),
+      gray,
+      rgba(0, 0, 0, 0)
+    ) 0 100%;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    top:15%;
+}
+.horizontalCenter{
+    height: 100px;
+    align-items: center;
+}
+
+#mobileNav nav{
+    text-align: right;
+    padding-right: 10px;
+    position: relative;
+}
+#mobileNav nav .mobileMenu {
+    list-style-type: none;
+    
+}
+#mobileNav nav .mobileMenu li{
+    list-style-type: none;
+}
+#mobileNav nav:hover .mobileMenu{
+    display: block!important;
+    width: 70%;
+    text-align: right;
+    z-index: 10; 
+    position: absolute;
+    right: 0;
+    top:30px;
+}
+.mobileMenu a{
+   z-index: 10;
+   text-decoration: none;
+   color: white;
+}
+
+
+
+/*Slider Css*/
+.slide img:target{
+    opacity: 1;
+}
+.slide img:first-child{
+    opacity: 1;
+}
+#slider{
+    position: relative;
+}
+#slider .navigate{
+    z-index: 20px;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+}
+.slide img{
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+    height: 100%;
+}
+.navigate>a>i{
+    color: gray;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+.navigate>a>i:hover{
+    color: pink;
+}
+.navigate>a>i:active{
+    color: pink;
+    opacity: 1;
+}
+
+
+main{
+    background: url('../img/ikonlar.png') repeat;
+    opacity: 0.9;
+    filter: alpha(opacity=60); 
+   
+}
+
+/*Duyurular Css*/
+/*Genel */
+#grids div{
+    text-align: center;
+}
+#grids img{
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius:50%;
+    padding:20px;
+    margin-top:-30px;
+}
+#grids p{
+    margin-top:-10px;
+}
+
+/*Identity*/
+#etkinlik{
+    background-color: rgba(255, 140, 179,0.749);
+}
+#etkinlik img{
+    background: #ff6699;
+}
+#etkinlik h3, #etkinlik p{
+    color:#a94264;
+}
+
+
+#siniflarimiz{
+    background-color: rgba(255, 217, 140,0.749);
+}
+#siniflarimiz img{
+    background: #f7c44e;
+}
+#siniflarimiz h3, #siniflarimiz p{
+    color: #926c1f;
+}
+
+#kampanyalarimiz{
+    background-color: rgba(179, 217, 140,0.749);
+}
+#kampanyalarimiz img{
+    background: #99cc66;
+}
+#kampanyalarimiz h3, 
+#kampanyalarimiz p{
+    color: #425e25;
+}
+
+
+
+#duyurularimiz{
+    background-color: rgba(102, 217, 217,0.749);
+}
+#duyurularimiz img{
+    background: #33cccc;
+}
+#duyurularimiz h3,
+#duyurularimiz p{
+    color:#115757;
+}
+
+/*Label Alanı Css Kodları*/
+.label p{
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    opacity: 0.7;
+    color: gray;
+}
+
+#col{
+    height: 400px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#col>div>img{
+    max-width:100%;
+    min-width: 100%;
+    height: 300px;
+}
+.firstColor{
+    background: #ff6699;
+}
+.secondColor{
+    background: #f7c44e;
+}
+.thirdColor{
+    background: #99cc66;
+}
+.fourthColor{
+    background: #33cccc;
+}
+
+
+/*Footer Alanı için Css Kodları*/
+/* Footer üzerindeki çizgiyi belirlemek için yardımcı olacak css kodları
+.cizgi{
+    width: 100%;
+    height: 5px;
+    background: red;
+}
+*/
+.cizgi{
+    width: 100%;
+}
+.cizgi li{
+    width: calc(100%/5);
+    float: left;
+    list-style-type: none;
+    text-align: center;
+}
+.cizgi .bir{
+    border-top:10px solid #4c7297;
+}
+.cizgi .iki{
+    border-top:10px solid #f37c7e;
+}
+.cizgi .uc{
+    border-top:10px solid #fac34c;
+}
+.cizgi .dort{
+    border-top:10px solid #acc158;
+}
+.cizgi .bes{
+    border-top:10px solid #4dbcd8;
+}
+
+
+footer{
+    width: 100%;
+    background: #008c99;
+    height: auto;
+    padding:20px 0;
+    align-items: center;
+}
+footer div:first-child,
+footer div:last-child{
+    text-align:center;
+}
+footer ul{
+    list-style-type: none;
+    text-align: center;
+}
+footer ul li{
+   display: inline; /* Menüler yan yana gelsin diye */
+   margin-right:40px;
+   color: white;
+   position: relative;
+}
+footer ul li::after{
+    content:" ";
+    width: 3px;
+    height: 100%;
+    background: white;
+    position: absolute; 
+    right: -25px;
+    top:0
+}
+footer ul li:last-child::after{
+    content:" ";
+    background: none;
+}
+footer .socialmediaicon{
+    color:white;
+    text-align: right;
+   
+}
+.socialmediaicon i{
+    width: 40px;
+    height: 40px;
+    margin-right:25px;
+    border:2px solid white;
+    border-radius:50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+   
+    box-sizing: content-box;
+    padding:5px;
+    
+}

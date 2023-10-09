@@ -1,0 +1,69 @@
+/*For mobile 480 ve 480ten küçük olanlar */
+@media only screen and (max-width:480px){
+  #iletisim{
+    display: none;
+  }
+  .navMenu{display: none;}
+  .container{
+      margin:0;
+  }
+  #mobileNav{
+    display: block;
+  }
+  .mobileMenu{
+    display: none;
+  }
+  #slider{
+    min-height: 300px;
+  }
+  .label p{
+    font-size:30px!important;
+  }
+  footer ul li{
+    display: block!important;
+    margin-top:10px;
+    margin-right: 0!important;
+  }
+  footer ul li::after{
+    background: none!important;
+  }
+}
+/*For tablet 480 ile 1024 arasında olan ekranlar*/
+@media (min-width:480px) and (max-width:1023px){
+  .container{
+    margin:0;
+  }
+  #iletisim{display: none;}
+  .navMenu{display: none;}
+  #mobileNav{
+    display: block;
+  }  
+  .mobileMenu{
+    display: none;
+  }
+  #slider{
+    min-height: 500px;
+  }
+  .label p{
+    font-size:30px!important;
+  }
+}
+
+/*For Desktop 1024 ve 1024 ten büyük olan ekranlar*/
+@media only screen and (min-width:1024px){
+  .container{
+    margin:0;
+  }
+  #mobileNav{
+    display: none;
+  }
+  .mobileMenu{
+    display: none;
+  }
+  #slider{
+    min-height: 700px;
+  }
+  .label p{
+    font-size:50px;
+  }
+}
